@@ -70,9 +70,19 @@ export const skillCategories = [
         color: "#DC382D",
       },
       {
+        name: "Redis",
+        icon: SiRedis,
+        color: "#DC382D",
+      },
+      {
         name: "Background Jobs",
         icon: FaServer,
         color: "#14B8A6",
+      },
+      {
+        name: "RabbitMQ",
+        icon: SiRabbitmq,
+        color: "#FF6600",
       },
     ],
   },
@@ -90,16 +100,6 @@ export const skillCategories = [
         icon: SiMysql,
         color: "#4479A1",
       },
-      {
-        name: "Redis",
-        icon: SiRedis,
-        color: "#DC382D",
-      },
-      {
-        name: "RabbitMQ",
-        icon: SiRabbitmq,
-        color: "#FF6600",
-      },
     ],
   },
 
@@ -107,19 +107,19 @@ export const skillCategories = [
     title: "Frontend",
     skills: [
       {
-        name: "React",
-        icon: SiReact,
-        color: "#61DAFB",
-      },
-      {
-        name: "Next.js",
-        icon: TbBrandNextjs,
-        color: "#FFFFFF",
-      },
-      {
         name: "Angular",
         icon: SiAngular,
         color: "#DD0031",
+      },
+      {
+        name: "HTML5",
+        icon: SiHtml5,
+        color: "#E34F26",
+      },
+      {
+        name: "CSS3",
+        icon: SiCss,
+        color: "#1572B6",
       },
       {
         name: "JavaScript",
@@ -137,14 +137,14 @@ export const skillCategories = [
         color: "#FACC15",
       },
       {
-        name: "HTML5",
-        icon: SiHtml5,
-        color: "#E34F26",
+        name: "React",
+        icon: SiReact,
+        color: "#61DAFB",
       },
       {
-        name: "CSS3",
-        icon: SiCss,
-        color: "#1572B6",
+        name: "Next.js",
+        icon: TbBrandNextjs,
+        color: "#FFFFFF",
       },
       {
         name: "Tailwind CSS",

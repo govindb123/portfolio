@@ -1,7 +1,7 @@
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import heroImg from "../assets/hero.png";
+import profileImg from "../assets/Profile.png";
 
 function Hero() {
   return (
@@ -55,9 +55,11 @@ function Hero() {
                   2000,
                   "Backend Developer",
                   2000,
-                  "ROR Developer",
+                  "Frontend Developer",
                   2000,
                   "Full Stack ROR Developer",
+                  2000,
+                  "Software Developer",
                   2000,
                 ]}
                 speed={50}
@@ -123,7 +125,7 @@ function Hero() {
             </motion.div>
           </motion.div>
 
-          {/* Right — 3D floating image */}
+          {/* Right — Profile image */}
           <motion.div
             className="flex-shrink-0"
             initial={{ opacity: 0, x: 60 }}
@@ -131,29 +133,36 @@ function Hero() {
             transition={{ duration: 0.8, delay: 0.3 }}
           >
             <div className="relative float-anim">
-              {/* Glow ring */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-cyan-500/30 to-purple-500/30 blur-2xl scale-110" />
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full border-2 border-cyan-500/40 overflow-hidden relative glow-pulse">
+              {/* Glow behind */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/30 to-purple-500/30 blur-3xl scale-110 rounded-3xl" />
+
+              {/* Profile image — large portrait card */}
+              <div className="relative w-72 h-96 md:w-96 md:h-[28rem] rounded-3xl overflow-hidden border-2 border-cyan-500/30 glow-pulse shadow-2xl shadow-cyan-500/20">
                 <img
-                  src={heroImg}
+                  src={profileImg}
                   alt="Govind Birajdar"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
+                {/* Bottom fade */}
+                <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-[#0a0f1e] to-transparent" />
               </div>
-              {/* Badge */}
+
+              {/* Badge bottom right */}
               <motion.div
-                className="absolute -bottom-4 -right-4 bg-slate-800 border border-cyan-500/40 rounded-xl px-4 py-2 text-sm font-semibold text-cyan-400"
+                className="absolute -bottom-4 -right-4 bg-slate-800/90 backdrop-blur-sm border border-cyan-500/40 rounded-xl px-4 py-2 text-sm font-semibold text-cyan-400"
                 animate={{ y: [0, -6, 0] }}
                 transition={{ duration: 2, repeat: Infinity, delay: 0.5 }}
               >
                 2.6+ Yrs Exp
               </motion.div>
+
+              {/* Badge top left */}
               <motion.div
-                className="absolute -top-4 -left-4 bg-slate-800 border border-purple-500/40 rounded-xl px-4 py-2 text-sm font-semibold text-purple-400"
+                className="absolute -top-4 -left-4 bg-slate-800/90 backdrop-blur-sm border border-purple-500/40 rounded-xl px-4 py-2 text-sm font-semibold text-purple-400"
                 animate={{ y: [0, -6, 0] }}
                 transition={{ duration: 2, repeat: Infinity, delay: 1 }}
               >
-                RoR Expert
+                ROR Expert
               </motion.div>
             </div>
           </motion.div>
