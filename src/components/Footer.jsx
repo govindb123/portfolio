@@ -19,10 +19,10 @@ function Footer() {
   ];
 
   return (
-    <footer className="bg-[#060b18] border-t border-slate-800 text-white py-14">
-      <div className="max-w-7xl mx-auto px-6">
+    <footer className="bg-[#060b18] border-t border-slate-800 text-white py-10 sm:py-14">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8">
 
           {/* Brand */}
           <div className="text-center md:text-left">
@@ -33,7 +33,7 @@ function Footer() {
           </div>
 
           {/* Nav */}
-          <div className="flex flex-wrap justify-center gap-6">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
             {links.map((l) => (
               <a key={l.name} href={l.href} className="text-slate-400 hover:text-cyan-400 text-sm transition">
                 {l.name}
@@ -42,7 +42,7 @@ function Footer() {
           </div>
 
           {/* Socials */}
-          <div className="flex gap-5">
+          <div className="flex gap-4 sm:gap-5">
             {socials.map(({ icon: Icon, href }, i) => (
               <motion.a
                 key={i}
@@ -59,9 +59,9 @@ function Footer() {
 
         </div>
 
-        <div className="border-t border-slate-800 mt-10 pt-6 text-center">
-          <p className="text-slate-600 text-sm">
-            © 2025 Govind Birajdar · Built with React, Vite & Tailwind CSS
+        <div className="border-t border-slate-800 mt-8 sm:mt-10 pt-5 sm:pt-6 text-center">
+          <p className="text-slate-600 text-xs sm:text-sm">
+            © 2026 Govind Birajdar · Built with React, Vite & Tailwind CSS
           </p>
         </div>
 

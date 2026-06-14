@@ -4,6 +4,10 @@ value: "2.6+",
 title: "Years Experience",
 },
 {
+value: "20+",
+title: "Projects Experience",
+},
+{
 value: "5+",
 title: "Professional Products",
 },
