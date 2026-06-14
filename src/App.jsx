@@ -2,8 +2,8 @@ import { BrowserRouter, Routes, Route, useLocation, useNavigate } from "react-ro
 import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import About from "./components/About";
 import Experience from "./components/Experience";
+import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Achievements from "./components/Achievements";
@@ -30,8 +30,8 @@ function HomePage() {
     <>
       <Navbar />
       <Hero />
-      <About />
       <Experience />
+      <About />
       <Skills />
       <Projects />
       <Achievements />

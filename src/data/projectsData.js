@@ -530,4 +530,52 @@ export const personalProjects = [
     challenges:
       "Developed a complete booking workflow for logistics services, including cargo weight selection, pickup scheduling, customer information management, and booking request submission while ensuring a seamless user experience across devices."
   },
+  {
+    slug: "developer-portfolio",
+    title: "Portfolio - Govind Birajdar",
+    role: "Frontend Developer",
+
+    description:
+      "A modern personal portfolio website built with React and Vite to showcase my professional experience, technical skills, education, certifications, and software development projects.",
+
+    tech: [
+      "React.js",
+      "Vite",
+      "JavaScript",
+      "Tailwind CSS",
+      "Responsive Design"
+    ],
+
+    image:
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&q=80",
+
+    images: null,
+
+    github: "https://github.com/govindb123/portfolio",
+
+    live: null,
+
+    type: "personal",
+
+    overview:
+      "A responsive developer portfolio designed to present my journey as a software developer. The website highlights my professional experience, education, technical skills, certifications, and personal projects through an interactive and modern user interface.",
+
+    features: [
+      "Professional introduction section",
+      "About me and career summary",
+      "Technical skills showcase",
+      "Work experience timeline",
+      "Educational background",
+      "Project portfolio with details",
+      "Certifications and achievements",
+      "Responsive design for all devices",
+      "Smooth scrolling navigation",
+      "Modern UI built with Tailwind CSS",
+      "GitHub repository integration",
+      "Contact section"
+    ],
+
+    challenges:
+      "Designed and developed a clean, responsive portfolio that effectively organizes professional information, project showcases, and technical skills while ensuring excellent performance and user experience."
+  },
 ];

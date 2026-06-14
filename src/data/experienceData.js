@@ -6,6 +6,8 @@ export const experiences = [
     description: [
       "Developed and maintained scalable backend applications for production environments.",
       "Designed and implemented RESTful APIs to support web and mobile platforms.",
+      "Built and maintained responsive UI components.",
+      "Developed interactive web interface for seamless user experiences.",
       "Built business logic and optimized application performance for high-traffic systems.",
       "Developed and enhanced Admin Panels, Super Admin Panels, and user-facing modules.",
       "Integrated third-party services and payment solutions into existing applications.",

@@ -18,12 +18,18 @@ import {
   SiHeroku,
   SiRabbitmq,
   SiJira,
+  SiPostman,
+  SiPython,
+  SiCplusplus,
+  SiC,
+  SiBitbucket,
 } from "react-icons/si";
 
 import {
   FaAws,
   FaCode,
   FaServer,
+  FaJava,
 } from "react-icons/fa";
 
 import {
@@ -68,6 +74,26 @@ export const skillCategories = [
         name: "Resque",
         icon: SiRedis,
         color: "#DC382D",
+      },
+      {
+        name: "Java",
+        icon: FaJava,
+        color: "#ED8B00",
+      },
+      {
+        name: "Python",
+        icon: SiPython,
+        color: "#3776AB",
+      },
+      {
+        name: "C",
+        icon: SiC,
+        color: "#A8B9CC",
+      },
+      {
+        name: "C++",
+        icon: SiCplusplus,
+        color: "#00599C",
       },
       {
         name: "Redis",
@@ -203,8 +229,18 @@ export const skillCategories = [
         color: "#CC342D",
       },
       {
+        name: "Postman",
+        icon: SiPostman,
+        color: "#FF6C37",
+      },
+      {
         name: "Jira",
         icon: SiJira,
+        color: "#0052CC",
+      },
+      {
+        name: "Bitbucket",
+        icon: SiBitbucket,
         color: "#0052CC",
       },
     ],
