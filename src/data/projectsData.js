@@ -2,7 +2,8 @@ export const projects = [
   {
     slug: "arenas",
     title: "Arenas",
-    role: "Ruby on Rails Backend Developer",
+    timeline: "2023 – 2026",
+    role: "Ruby on Rails Developer",
     description:
       "Centralized backend platform supporting multiple gaming applications. Contributed to scalable REST APIs, shared business logic, and backend services.",
     tech: ["Ruby on Rails", "REST APIs", "PostgreSQL", "Redis"],
@@ -33,6 +34,7 @@ export const projects = [
   {
     slug: "heroic",
     title: "Heroic",
+    timeline: "2024 – 2026",
     role: "Ruby on Rails Developer",
     description:
       "Sports platform delivering live updates and user management features across Cricket, Tennis, and Football.",
@@ -101,6 +103,7 @@ export const projects = [
   {
     slug: "ballchalu",
     title: "BallChalu",
+    timeline: "2024 – 2026",
     role: "Angular Developer",
     description:
       "Fantasy sports application like Dream11 featuring contest management, team creation workflows, and user interactions.",
@@ -154,7 +157,8 @@ export const projects = [
   {
     slug: "sklash-games",
     title: "Sklash Games",
-    role: "Ruby on Rails Backend Developer",
+    timeline: "2023 – 2026",
+    role: "Ruby on Rails Developer",
     description:
       "Multiplayer gaming platform supporting Ludo, Chess, Space Invader and more with backend services and real-time features.",
     tech: ["Ruby on Rails", "Redis", "PostgreSQL"],
@@ -213,7 +217,8 @@ export const projects = [
   {
     slug: "sportx",
     title: "SportX",
-    role: "Ruby on Rails Backend Developer",
+    timeline: "2023 – 2026",
+    role: "Ruby on Rails Developer",
     description:
       "Cricket-focused platform like Cricbuzz providing live scores, alerts, and event-driven notifications.",
     tech: ["Ruby on Rails", "REST APIs", "Redis"],

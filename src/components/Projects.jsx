@@ -1,7 +1,14 @@
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { projects, personalProjects } from "../data/projectsData";
+import { projects as rawProjects, personalProjects } from "../data/projectsData";
+
+// Sort professional projects by timeline year ascending
+const projects = [...rawProjects].sort((a, b) => {
+  const yearA = parseInt(a.timeline?.split("–")[0]) || 9999;
+  const yearB = parseInt(b.timeline?.split("–")[0]) || 9999;
+  return yearA - yearB;
+});
 import { FaCode, FaGithub, FaExternalLinkAlt, FaArrowRight, FaServer, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 /* ── Professional card ── */
@@ -38,7 +45,12 @@ function ProfessionalCard({ project }) {
         </div>
 
         <div className="bg-[#0d1224] p-5 flex flex-col flex-1">
-          <h3 className="text-base font-bold text-white mb-0.5">{project.title}</h3>
+          <div className="flex items-center justify-between mb-0.5">
+            <h3 className="text-base font-bold text-white">{project.title}</h3>
+            {project.timeline && (
+              <span className="text-xs text-cyan-400/70 bg-cyan-500/10 border border-cyan-500/20 px-2 py-0.5 rounded-full flex-shrink-0 ml-2">{project.timeline}</span>
+            )}
+          </div>
           <p className="text-cyan-400 text-xs font-medium mb-3">{project.role}</p>
           <p className="text-slate-400 text-xs leading-6 flex-1 line-clamp-3">{project.description}</p>
           <div className="flex flex-wrap gap-1.5 mt-4">
