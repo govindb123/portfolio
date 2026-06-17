@@ -10,6 +10,7 @@ import Achievements from "./components/Achievements";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ProjectDetail from "./pages/ProjectDetail";
+import Chatbot from "./components/Chatbot";
 
 function HomePage() {
   const location = useLocation();
@@ -48,6 +49,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/project/:slug" element={<ProjectDetail />} />
       </Routes>
+      <Chatbot />
     </BrowserRouter>
   );
 }
