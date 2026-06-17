@@ -331,7 +331,7 @@ const SUGGESTIONS = ["What are his skills?", "Tell me about projects", "Work exp
 export default function Chatbot() {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState([
-    { role: "ai", text: "Hi! 👋\n\nI'm Govind's AI assistant.\n\nI can help you with:\n   • Experience\n   • Skills\n   • Projects\n   • Resume\n   • Contact information\n\nHow can I help you today?" }
+    { role: "ai", text: "Hi! 👋\n\nI'm Govind's AI assistant.\n\nHow can I help you today?" }
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
